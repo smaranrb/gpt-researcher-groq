@@ -4,9 +4,11 @@ DEFAULT_CONFIG: BaseConfig = {
     "RETRIEVER": "tavily",
     "EMBEDDING": "openai:text-embedding-3-small",
     "SIMILARITY_THRESHOLD": 0.42,
-    "FAST_LLM": "openai:gpt-4o-mini",
-    "SMART_LLM": "openai:gpt-4o-2024-11-20",
-    "STRATEGIC_LLM": "openai:gpt-4o", # Can be used with gpt-o1
+    #"GROQ_API_KEY":"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",
+    # Set one of the LLM models supported by Groq
+    "FAST_LLM":"groq:Llama3-70b-8192",
+    "SMART_LLM":"groq:Llama3-70b-8192",
+    "STRATEGIC_LLM":"groq:Llama3-70b-8192",
     "FAST_TOKEN_LIMIT": 2000,
     "SMART_TOKEN_LIMIT": 4000,
     "STRATEGIC_TOKEN_LIMIT": 4000,
